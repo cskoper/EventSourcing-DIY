@@ -1,13 +1,13 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
+    <RootNamespace>EventSourcing_DIY</RootNamespace>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>EventSourcing_DIY</RootNamespace>
   </PropertyGroup>
-
   <ItemGroup>
+    <Compile Include="Infrastructure.fs" />
+    <Compile Include="Domain.fs" />
+    <Compile Include="Helper.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
-
 </Project>
