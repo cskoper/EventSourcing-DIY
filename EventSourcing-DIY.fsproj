@@ -5,9 +5,11 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Infrastructure.fs" />
+    <Compile Include="EventStore.fs" />
     <Compile Include="Domain.fs" />
-    <Compile Include="Helper.fs" />
+    <Compile Include="Projections.fs" />
+    <Compile Include="Behavior.fs" />
+    <Compile Include="Helpers.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 </Project>

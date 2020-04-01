@@ -6,6 +6,6 @@ type Flavour =
 
 type Event =
     | FlavourSold of Flavour
-    | FlavourRestrocked of Flavour * int
+    | FlavourRestocked of Flavour * int
     | FlavourWentOutOfStock of Flavour
     | FlavourWasNotInStock of Flavour
