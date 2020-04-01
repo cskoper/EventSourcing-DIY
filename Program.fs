@@ -6,6 +6,8 @@ open Behavior
 
 [<EntryPoint>]
 let main _ =
+    runTests ()
+
     let eventStore : EventStore<Event> = EventStore.initialize()
 
     eventStore.Evolve (sellFlavour Vanilla) // Here we're partially applying the `sellFlavour` function.

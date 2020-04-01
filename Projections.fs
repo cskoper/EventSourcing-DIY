@@ -29,8 +29,8 @@ let soldFlavours : Projection<Map<Flavour,int>,Event> =
 let restock flavour amount stock =
     stock
     |> Map.tryFind flavour
-    |> Option.map (fun portions -> stock |> Map.add flavour (portions + amount))
-    |> Option.defaultValue stock
+    |> Option.defaultValue 0
+    |> fun portions -> stock |> Map.add flavour (portions + amount)
 
 let updateFlavoursInStock stock event =
     match event with 

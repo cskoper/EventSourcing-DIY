@@ -1,0 +1,9 @@
+STORAGE: NONE
+RESTRICTION: || (== net10) (== netcoreapp3.1)
+NUGET
+  remote: https://api.nuget.org/v3/index.json
+    Expecto (8.13.2)
+      FSharp.Core (>= 4.6) - restriction: || (&& (== net10) (>= net461)) (&& (== net10) (>= netstandard2.0)) (== netcoreapp3.1)
+      Mono.Cecil (>= 0.11.2) - restriction: || (&& (== net10) (>= net461)) (&& (== net10) (>= netstandard2.0)) (== netcoreapp3.1)
+    FSharp.Core (4.7.1) - restriction: || (&& (== net10) (>= net461)) (&& (== net10) (>= netstandard2.0)) (== netcoreapp3.1)
+    Mono.Cecil (0.11.2) - restriction: || (&& (== net10) (>= net461)) (&& (== net10) (>= netstandard2.0)) (== netcoreapp3.1)
